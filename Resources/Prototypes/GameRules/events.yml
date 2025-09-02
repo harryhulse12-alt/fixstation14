@@ -186,7 +186,7 @@
     - id: KingRatMigration
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
-    - id: RevenantSpawn
+    #- id: RevenantSpawn
     - id: SleeperAgents
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
@@ -262,7 +262,7 @@
     weight: 8
     duration: 35
     chaos: # Goobstation
-      Anomaly: 40
+      Anomaly: 100
     eventType: Chaotic # Goobstation
   - type: BluespaceArtifactRule
 
@@ -271,7 +271,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    weight: 2
+    weight: 4
     reoccurrenceDelay: 5
     earliestStart: 1
     duration: 1
@@ -351,7 +351,7 @@
   id: DragonSpawn
   components:
   - type: StationEvent
-    weight: 3
+    weight: 2
     earliestStart: 45
     reoccurrenceDelay: 20
     minimumPlayers: 60
@@ -365,7 +365,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 600
+    chaosScore: 800
   - type: SpaceSpawnRule
     spawnDistance: 0
   - type: AntagSpawner
@@ -390,7 +390,7 @@
   id: NinjaSpawn
   components:
   - type: StationEvent
-    weight: 6
+    weight: 4
     duration: null
     earliestStart: 45
     reoccurrenceDelay: 20
@@ -404,7 +404,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 300
+    chaosScore: 500
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
     # Goobstation start
@@ -459,7 +459,7 @@
   id: ParadoxCloneSpawn
   components:
   - type: StationEvent
-    weight: 5
+    weight: 10
     duration: null
     earliestStart: 20
     reoccurrenceDelay: 20
@@ -500,27 +500,27 @@
       mindRoles:
       - MindRoleParadoxClone
 
-- type: entity
-  parent: BaseGameRule
-  id: RevenantSpawn
-  components:
-  - type: StationEvent
-    weight: 3.5
-    duration: 1
-    earliestStart: 30
-    minimumPlayers: 20
-    chaos: # Goobstation
-      Hostile: 20
-      Friend: 20
-      Combat: 40
-      Death: 100
-      Medical: 100
-    eventType: HostilesSpawn # Goobstation
-  # Goobstation
-  - type: GameRule
-    chaosScore: 450
-  - type: RandomSpawnRule
-    prototype: MobRevenant
+#- type: entity
+#  parent: BaseGameRule
+#  id: RevenantSpawn
+#  components:
+#  - type: StationEvent
+#    weight: 3.5
+#    duration: 1
+#    earliestStart: 30
+#    minimumPlayers: 20
+#    chaos: # Goobstation
+#      Hostile: 20
+#      Friend: 20
+#      Combat: 40
+#      Death: 100
+#      Medical: 100
+#    eventType: HostilesSpawn # Goobstation
+#  # Goobstation
+#  - type: GameRule
+#    chaosScore: 450
+#  - type: RandomSpawnRule
+#    prototype: MobRevenant
 
 # Goob - wiz of our own
 #- type: entity
