@@ -51,45 +51,6 @@
     tags:
       - MidroundAntag
 
-
-#- type: entity
-#  parent: Traitor
-#  id: TraitorMidround
-#  components:
-#  - type: StationEvent
-#    earliestStart: 30
-#    weight: 3
-#    minimumPlayers: 40
-#    startAnnouncement: station-event-communication-interception
-#    startAudio:
-#      path: /Audio/Announcements/intercept.ogg
-#    duration: null
-#    occursDuringRoundEnd: false
-#    chaos:
-#      Hostile: 200
-#      Medical: 200
-#      Death: 200
-#    eventType: HostilesSpawn
-#  - type: GameRule
-#   chaosScore: 650
-# - type: AlertLevelInterceptionRule
-#  - type: AntagSelection
-#    selectionTime: PostPlayerSpawn
-#    definitions:
-#    - prefRoles: [ Traitor ]
-#      max: 3
-#      playerRatio: 10
-#      blacklist:
-#        components:
-#        - AntagImmune
-#        - CommandStaff
-#      lateJoinAdditional: true
-#      mindRoles:
-#      - MindRoleTraitor
-#  - type: Tag
-#    tags:
-#      - MidroundAntag
-
  Midround Changelings
 - type: entity
   parent: Changeling
@@ -131,92 +92,90 @@
     tags:
       - MidroundAntag
 
-# Midround Heretics
-#- type: entity
-#  parent: Heretic
-#  id: HereticMidround
-#  components:
-#  - type: StationEvent
-#    earliestStart: 20
-#    weight: 3
-#    minimumPlayers: 30
-#    startAnnouncement: station-event-communication-interception
-#    startAudio:
-#      path: /Audio/Announcements/intercept.ogg
-#    duration: null
-#    occursDuringRoundEnd: false
-#    chaos:
-#      Hostile: 200
-#      Medical: 150
-#      Death: 200
-#    eventType: HostilesSpawn
-#  - type: GameRule
-#    chaosScore: 300
-#  - type: AlertLevelInterceptionRule
-#  - type: AntagSelection
-#    selectionTime: PostPlayerSpawn
-#    agentName: heretic-roundend-name
-#    definitions:
-#    - prefRoles: [ Heretic ]
-#      max: 1
-#      playerRatio: 15
-#      blacklist:
-#        components:
-#        - CommandStaff
-#        - AntagImmune
-#        - BibleUser
-#      lateJoinAdditional: true
-#      jobBlacklist: [ Chaplain ] # GOOBSTATION
-#      mindRoles:
-#      - MindRoleHeretic
-#  - type: Tag
-#    tags:
-#      - MidroundAntag
+ Midround Heretics
+- type: entity
+  parent: Heretic
+  id: HereticMidround
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    weight: 3
+    minimumPlayers: 100
+    startAnnouncement: station-event-communication-interception
+    startAudio:
+      path: /Audio/Announcements/intercept.ogg
+    duration: null
+    occursDuringRoundEnd: false
+    chaos:
+      Hostile: 200
+      Medical: 150
+      Death: 200
+    eventType: HostilesSpawn
+  - type: GameRule
+    chaosScore: 300
+  - type: AlertLevelInterceptionRule
+  - type: AntagSelection
+    selectionTime: PostPlayerSpawn
+    agentName: heretic-roundend-name
+    definitions:
+    - prefRoles: [ Heretic ]
+      max: 1
+      playerRatio: 15
+      blacklist:
+         components:
+        - CommandStaff
+        - AntagImmune
+        - BibleUser
+      lateJoinAdditional: true
+      jobBlacklist: [ Chaplain ] # GOOBSTATION
+      mindRoles:
+      - MindRoleHeretic
+  - type: Tag
+    tags:
+      - MidroundAntag
 
-# Midround Revolutionaries
-#- type: entity
-#  parent: Revolutionary
-#  id: RevolutionaryMidround
-#  components:
-#  - type: StationEvent
-#    earliestStart: 20
-#    weight: 3
-#    minimumPlayers: 30
-#    maxOccurrences: 1
-#    duration: null
-#    occursDuringRoundEnd: false
-#    chaos:
-#      Hostile: 250
-#      Medical: 250
-#      Death: 250
-#    eventType: HostilesSpawn
-#  - type: GameRule
-#    chaosScore: 800
-#  - type: AntagSelection
-#    selectionTime: PostPlayerSpawn
-#    definitions:
-#    - prefRoles: [ HeadRev ]
-#      max: 3
-#      playerRatio: 15
-#      blacklist:
-#        components:
-#        - AntagImmune
-#        - CommandStaff
-#      briefing:
-#       text: head-rev-role-greeting
-#       color: CornflowerBlue
-#        sound: "/Audio/Ambience/Antag/headrev_start.ogg"
-#      startingGear: HeadRevGear
-#      components:
-#      - type: Revolutionary
-#      - type: HeadRevolutionary
-#      mindRoles:
-#      - MindRoleHeadRevolutionary
-#  - type: Tag
-#    tags:
-#     - MidroundAntag
-
-# Commented out as per request
+ Midround Revolutionaries
+- type: entity
+  parent: Revolutionary
+  id: RevolutionaryMidround
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    weight: 3
+    minimumPlayers: 100
+    maxOccurrences: 1
+    duration: null
+    occursDuringRoundEnd: false
+    chaos:
+      Hostile: 250
+      Medical: 250
+      Death: 250
+    eventType: HostilesSpawn
+  - type: GameRule
+    chaosScore: 800
+  - type: AntagSelection
+    selectionTime: PostPlayerSpawn
+    definitions:
+    - prefRoles: [ HeadRev ]
+      max: 3
+      playerRatio: 15
+      blacklist:
+        components:
+        - AntagImmune
+        - CommandStaff
+     briefing:
+       text: head-rev-role-greeting
+       color: CornflowerBlue
+        sound: "/Audio/Ambience/Antag/headrev_start.ogg"
+      startingGear: HeadRevGear
+      components:
+      - type: Revolutionary
+      - type: HeadRevolutionary
+      mindRoles:
+      - MindRoleHeadRevolutionary
+  - type: Tag
+    tags:
+     - MidroundAntag
 
 # Skeleton Spawn
 - type: entity
@@ -240,30 +199,29 @@
     tags:
       - MidroundAntag
 
-# Blob Midround
-#- type: entity
-#  parent: BaseGameRule
-#  id: BlobMidround
-#  components:
-#  - type: StationEvent
-#    weight: 1.5
-#    earliestStart: 80
-#    minimumPlayers: 30 # how is that 20 people when rat king is 30??? changed.
-#    duration: null
-#    maxOccurrences: 2
-#    chaos:
-#      Hostile: 300
-#      Medical: 300
-#      Death: 300
-#    eventType: HostilesSpawn
-#  - type: GameRule
-#    chaosScore: 1000
-#  - type: BlobSpawnRule
-#    carrierBlobProtos:
-#    - SpawnPointGhostBlobRat
-#    playersPerCarrierBlob: 30
-#    maxCarrierBlob: 1
-#  - type: Tag
-#    tags:
-#     - MidroundAntag
-# Commented out as per request of Cyg
+ Blob Midround
+- type: entity
+  parent: BaseGameRule
+  id: BlobMidround
+  components:
+  - type: StationEvent
+    weight: 1.5
+    earliestStart: 80
+    minimumPlayers: 100 # how is that 20 people when rat king is 30??? changed.
+    duration: null
+    maxOccurrences: 2
+    chaos:
+      Hostile: 300
+      Medical: 300
+      Death: 300
+    eventType: HostilesSpawn
+  - type: GameRule
+    chaosScore: 1000
+  - type: BlobSpawnRule
+    carrierBlobProtos:
+    - SpawnPointGhostBlobRat
+    playersPerCarrierBlob: 30
+    maxCarrierBlob: 1
+  - type: Tag
+    tags:
+     - MidroundAntag
