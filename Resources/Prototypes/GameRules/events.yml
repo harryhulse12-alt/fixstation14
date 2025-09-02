@@ -829,18 +829,18 @@
   id: LoneOpsSpawn
   components:
   - type: StationEvent
-    earliestStart: 35
+    earliestStart: 60
     weight: 5.5
     minimumPlayers: 20
     duration: 1
     chaos: # Goobstation
-      Hostile: 60
-      Medical: 75
-      Death: 100
+      Hostile: 80
+      Medical: 90
+      Death: 120
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 700
+    chaosScore: 900
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
