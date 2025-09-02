@@ -90,46 +90,46 @@
 #    tags:
 #      - MidroundAntag
 
-# Midround Changelings
-#- type: entity
-#  parent: Changeling
-#  id: ChangelingMidround
-#  components:
-#  - type: StationEvent
-#    earliestStart: 20
-#    weight: 3
-#    minimumPlayers: 15
-#    startAnnouncement: station-event-communication-interception
-#    startAudio:
-#      path: /Audio/Announcements/intercept.ogg
-#    duration: null
-#    occursDuringRoundEnd: false
-#    chaos:
-#      Hostile: 150
-#      Medical: 150
-#      Death: 150
-#    eventType: HostilesSpawn
-#  - type: GameRule
-#    chaosScore: 300
-#  - type: AlertLevelInterceptionRule
-#  - type: AntagSelection
-#    selectionTime: PostPlayerSpawn
-#    agentName: changeling-roundend-name
-#    definitions:
-#    - prefRoles: [ Changeling ]
-#      max: 1
-#      playerRatio: 10
-#      blacklist:
-#        components:
-#        - CommandStaff
-#        - AntagImmune
-#        - BibleUser
-#      lateJoinAdditional: true
-#      mindRoles:
-#      - MindRoleChangeling
-#  - type: Tag
-#    tags:
-#      - MidroundAntag
+ Midround Changelings
+- type: entity
+  parent: Changeling
+  id: ChangelingMidround
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    weight: 3
+    minimumPlayers: 15
+    startAnnouncement: station-event-communication-interception
+    startAudio:
+      path: /Audio/Announcements/intercept.ogg
+    duration: null
+    occursDuringRoundEnd: false
+    chaos:
+      Hostile: 150
+      Medical: 150
+      Death: 150
+    eventType: HostilesSpawn
+  - type: GameRule
+    chaosScore: 300
+  - type: AlertLevelInterceptionRule
+  - type: AntagSelection
+    selectionTime: PostPlayerSpawn
+    agentName: changeling-roundend-name
+    definitions:
+    - prefRoles: [ Changeling ]
+      max: 1
+      playerRatio: 10
+      blacklist:
+        components:
+        - CommandStaff
+        - AntagImmune
+        - BibleUser
+      lateJoinAdditional: true
+      mindRoles:
+      - MindRoleChangeling
+  - type: Tag
+    tags:
+      - MidroundAntag
 
 # Midround Heretics
 #- type: entity
