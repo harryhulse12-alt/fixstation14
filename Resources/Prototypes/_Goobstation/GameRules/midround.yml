@@ -58,7 +58,7 @@
 #  components:
 #  - type: StationEvent
 #    earliestStart: 30
-#    weight: 10
+#    weight: 3
 #    minimumPlayers: 40
 #    startAnnouncement: station-event-communication-interception
 #    startAudio:
@@ -66,9 +66,9 @@
 #    duration: null
 #    occursDuringRoundEnd: false
 #    chaos:
-#      Hostile: 100
-#      Medical: 100
-#      Death: 100
+#      Hostile: 200
+#      Medical: 200
+#      Death: 200
 #    eventType: HostilesSpawn
 #  - type: GameRule
 #   chaosScore: 650
