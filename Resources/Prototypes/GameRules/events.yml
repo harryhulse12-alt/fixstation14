@@ -267,7 +267,7 @@
     weight: 8
     duration: 35
     chaos: # Goobstation
-      Anomaly: 100
+      Anomaly: 100 # Omu, chaos score increased from  40
     eventType: Chaotic # Goobstation
   - type: BluespaceArtifactRule
 
