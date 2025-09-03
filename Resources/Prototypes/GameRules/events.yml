@@ -356,7 +356,7 @@
   id: DragonSpawn
   components:
   - type: StationEvent
-    weight: 2
+    weight: 2 # Omu, weight decreased from 3
     earliestStart: 45
     reoccurrenceDelay: 20
     minimumPlayers: 60
