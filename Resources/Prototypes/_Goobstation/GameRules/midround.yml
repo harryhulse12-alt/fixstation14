@@ -224,4 +224,5 @@
     maxCarrierBlob: 1
   - type: Tag
     tags:
-    - MidroundAntag
+      - MidroundAntag
+
