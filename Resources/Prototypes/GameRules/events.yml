@@ -244,7 +244,7 @@
     weight: 8
     duration: 35
     chaos: # Goobstation
-      Anomaly: 100            #OMU change, make it less chaotic
+      Anomaly: 100            #OMU change - make it less chaotic
     eventType: Chaotic # Goobstation
   # Goobstation
   - type: GameRule
@@ -276,7 +276,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    weight: 4                #OMU change, make it more likely to balance out other anom chaos events
+    weight: 4                #OMU change - make it more likely to balance out other anom chaos events
     reoccurrenceDelay: 5
     earliestStart: 1
     duration: 1
@@ -370,7 +370,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 800            #OMU change, make chaos cost higher
+    chaosScore: 800            #OMU change - make chaos cost higher
   - type: SpaceSpawnRule
     spawnDistance: 0
   - type: AntagSpawner
@@ -395,7 +395,7 @@
   id: NinjaSpawn
   components:
   - type: StationEvent
-    weight: 4              #OMU change, make ninja less likely
+    weight: 4              #OMU change - make ninja less likely
     duration: null
     earliestStart: 45
     reoccurrenceDelay: 20
@@ -409,7 +409,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 500        #OMU change, make chaos score cost higher
+    chaosScore: 500        #OMU change - make chaos score cost higher
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
     # Goobstation start
@@ -464,7 +464,7 @@
   id: ParadoxCloneSpawn
   components:
   - type: StationEvent
-    weight: 10            #OMU change, Make paradox more likely
+    weight: 10            #OMU change - Make paradox more likely
     duration: null
     earliestStart: 20
     reoccurrenceDelay: 20
@@ -513,7 +513,7 @@
     weight: 3.5
     duration: 1
     earliestStart: 30
-    minimumPlayers: 100            #OMU change, removes it from viable spawns (outside of ninja)
+    minimumPlayers: 100            #OMU change - removes it from viable spawns (outside of ninja)
     chaos: # Goobstation
       Hostile: 20
       Friend: 20
@@ -834,7 +834,7 @@
   id: LoneOpsSpawn
   components:
   - type: StationEvent
-    earliestStart: 60              #OMU change, make lone-ops spawn later
+    earliestStart: 60              #OMU change - make lone-ops spawn later
     weight: 5.5
     minimumPlayers: 20
     duration: 1
@@ -845,7 +845,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 900                #OMU change, raises chaos cost
+    chaosScore: 900                #OMU change - raises chaos cost
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
