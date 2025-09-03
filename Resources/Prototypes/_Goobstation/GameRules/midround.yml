@@ -51,7 +51,7 @@
     tags:
       - MidroundAntag
 
-#Midround Changelings
+# Midround Changelings
 - type: entity
   parent: Changeling
   id: ChangelingMidround
@@ -92,7 +92,7 @@
     tags:
       - MidroundAntag
 
- #Midround Heretics
+ # Midround Heretics
 - type: entity
   parent: Heretic
   id: HereticMidround
@@ -100,7 +100,7 @@
   - type: StationEvent
     earliestStart: 20
     weight: 3
-    minimumPlayers: 100      #OMU change, removes from valid event pool
+    minimumPlayers: 100      #OMU change - removes from valid event pool
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
@@ -134,7 +134,7 @@
     tags:
       - MidroundAntag
 
- #Midround Revolutionaries
+ # Midround Revolutionaries
 - type: entity
   parent: Revolutionary
   id: RevolutionaryMidround
@@ -142,7 +142,7 @@
   - type: StationEvent
     earliestStart: 20
     weight: 3
-    minimumPlayers: 100      #OMU change, removes from valid event pool
+    minimumPlayers: 100      #OMU change - removes from valid event pool
     maxOccurrences: 1
     duration: null
     occursDuringRoundEnd: false
@@ -199,7 +199,7 @@
     tags:
       - MidroundAntag
 
-#Blob Midround
+# Blob Midround
 - type: entity
   parent: BaseGameRule
   id: BlobMidround
@@ -207,7 +207,7 @@
   - type: StationEvent
     weight: 1.5
     earliestStart: 80
-    minimumPlayers: 100     #OMU change, removes from valid event pool
+    minimumPlayers: 100     #OMU change - removes from valid event pool
     duration: null
     maxOccurrences: 2
     chaos:
