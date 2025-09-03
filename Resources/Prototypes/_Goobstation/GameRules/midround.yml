@@ -175,7 +175,7 @@
       - MindRoleHeadRevolutionary
   - type: Tag
     tags:
-    - MidroundAntag
+      - MidroundAntag
 
 # Skeleton Spawn
 - type: entity
