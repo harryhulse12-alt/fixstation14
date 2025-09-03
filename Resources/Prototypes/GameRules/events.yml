@@ -839,8 +839,8 @@
     minimumPlayers: 20
     duration: 1
     chaos: # Goobstation
-      Hostile: 80
-      Medical: 90
+      Hostile: 80 # Omu, chaos score increased from 60
+      Medical: 90 # Omu, chaos score increased from 75
       Death: 120                   #OMU change, make chaos points more in line with the danger it poses
     eventType: HostilesSpawn # Goobstation
   # Goobstation
