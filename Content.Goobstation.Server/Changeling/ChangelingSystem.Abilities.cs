@@ -192,7 +192,7 @@ public sealed partial class ChangelingSystem
         _blood.SpillAllSolutions(target);
 
         EnsureComp<AbsorbedComponent>(target);
-        #EnsureComp<UnrevivableComponent>(target); OMU change, ensures bodies are revivable
+        //EnsureComp<UnrevivableComponent>(target); //OMU change, ensures bodies are revivable
 
         var popup = string.Empty;
         var bonusChemicals = 0f;
