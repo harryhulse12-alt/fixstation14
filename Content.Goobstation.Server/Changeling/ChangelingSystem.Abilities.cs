@@ -186,7 +186,7 @@ public sealed partial class ChangelingSystem
 
         PlayMeatySound(args.User, comp);
 
-        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 200);
+        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 180);
         _damage.TryChangeDamage(target, dmg, true, false, targetPart: TargetBodyPart.All); // Shitmed Change
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
