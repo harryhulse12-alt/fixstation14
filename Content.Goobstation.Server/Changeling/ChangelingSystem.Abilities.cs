@@ -186,13 +186,13 @@ public sealed partial class ChangelingSystem
 
         PlayMeatySound(args.User, comp);
 
-        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 180);
+        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 180); # OMU change, ensures bodies are fixable even WITHOUT cryo 
         _damage.TryChangeDamage(target, dmg, true, false, targetPart: TargetBodyPart.All); // Shitmed Change
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
 
         EnsureComp<AbsorbedComponent>(target);
-        EnsureComp<UnrevivableComponent>(target);
+        #EnsureComp<UnrevivableComponent>(target); OMU change, ensures bodies are revivable
 
         var popup = string.Empty;
         var bonusChemicals = 0f;
