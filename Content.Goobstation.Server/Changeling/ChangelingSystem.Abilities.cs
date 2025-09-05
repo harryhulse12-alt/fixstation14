@@ -194,7 +194,7 @@ public sealed partial class ChangelingSystem
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
 
-        _blood.ChangeBloodReagent(target, blood.BloodReagent) //OMU change, sets blood type back to initial blood so we don't get weird ferrochromic blood
+        _blood.ChangeBloodReagent(target, blood.BloodReagent); //OMU change, sets blood type back to initial blood so we don't get weird ferrochromic blood
         
         EnsureComp<AbsorbedComponent>(target);
         //EnsureComp<UnrevivableComponent>(target); //OMU change, ensures bodies are revivable
